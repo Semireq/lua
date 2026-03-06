@@ -97,7 +97,7 @@ local Input = Tabs.Main:AddInput("Key", {
 
 if Linkvertise_Enabled then
 	Tabs.Main:AddButton({
-		Title = "Get Key (Linkvertise)",
+		Title = "Get Key (Linkvertise BEST)",
 		Callback = function()
 			setclipboard(Linkvertise_Link)
 			notify("Copied To Clipboard", "Ad Reward Link has been copied to your clipboard", 16)
@@ -151,4 +151,5 @@ Tabs.Main:AddButton({
 })
 
 Window:SelectTab(1)
+
 notify(Hub, "Loader Has Loaded Successfully")
