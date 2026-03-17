@@ -4,11 +4,14 @@ until game:IsLoaded()
 
 local Hub = "Nero_Hub_Free"
 local Hub_Script_ID = "f9ad080d47e11898dcbfa7f5e46268ec"
-local Discord_Invite = "DVacZvc5uj"
+local Discord_Invite = "nerohub"
 local UI_Theme = "Dark"
 
 local Linkvertise_Enabled = true
 local Linkvertise_Link = "https://ads.luarmor.net/get_key?for=Nero_Hub_Linkvertise-yicBCqcIUsfo"
+
+local WorkInk_Enabled = true
+local WorkInk_Link = "https://ads.luarmor.net/get_key?for=Nero_Hub_WorkInk-vMeTyjIMLAzg"
 
 local Lootlabs_Enabled = true
 local Lootlabs_Link = "https://ads.luarmor.net/get_key?for=Nero_Hub_LootLabs-lVLiTukkwHyq"
@@ -79,7 +82,7 @@ local Window = UI:CreateWindow({
 	Title = Hub,
 	SubTitle = "Loader",
 	TabWidth = 160,
-	Size = UDim2.fromOffset(580, 320),
+	Size = UDim2.fromOffset(580, 450),
 	Acrylic = false,
 	Theme = UI_Theme,
 	MinimizeKey = Enum.KeyCode.End,
@@ -100,6 +103,16 @@ if Linkvertise_Enabled then
 		Title = "Get Key (Linkvertise BEST)",
 		Callback = function()
 			setclipboard(Linkvertise_Link)
+			notify("Copied To Clipboard", "Ad Reward Link has been copied to your clipboard", 16)
+		end,
+	})
+end
+
+if WorkInk_Enabled then
+	Tabs.Main:AddButton({
+		Title = "Get Key (WorkInk. click offer and wait 1 minute)",
+		Callback = function()
+			setclipboard(WorkInk_Link)
 			notify("Copied To Clipboard", "Ad Reward Link has been copied to your clipboard", 16)
 		end,
 	})
