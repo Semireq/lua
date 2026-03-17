@@ -2,7 +2,7 @@ repeat
 	task.wait()
 until game:IsLoaded()
 
-local Hub = "Nero_Hub_Premium"
+local Hub = "Nero_Hub_Premium2"
 local Hub_Script_ID = "916236a827ffc45b93ec8c2147f81a75"
 local Discord_Invite = "DVacZvc5uj"
 local UI_Theme = "Dark"
