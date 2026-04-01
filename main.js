@@ -2,7 +2,7 @@
 function rickroll() {
   const modal = document.getElementById('modal');
   const frame = document.getElementById('rr-frame');
-  frame.src = 'https://www.youtube.com/embed/xvFZjo5PgG0?autoplay=1';
+  frame.src = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1';
   modal.classList.add('active');
 }
 
