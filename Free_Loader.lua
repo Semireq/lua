@@ -15,6 +15,7 @@ local Lootlabs_Link = "https://ads.luarmor.net/get_key?for=Nero_Hub_LootLabs-lVL
 
 local PlaceIDs = {
 	["118637423917462"] = "e9c3188dff81f14e9b4a9ae952434bc1",
+	["92416421522960"]  = "1336e5d21de8e130d1392ab5aee07c04",
 }
 
 makefolder(Hub)
@@ -144,7 +145,7 @@ Tabs.Main:AddButton({
 		Request({
 			Url = "http://127.0.0.1:6463/rpc?v=1",
 			Method = "POST",
-			Headers = { ["Content-Type"] = "application/json", ["osrigin"] = "https://discord.com" },
+			Headers = { ["Content-Type"] = "application/json", ["origin"] = "https://discord.com" },
 			Body = HttpService:JSONEncode({ args = { code = Discord_Invite }, cmd = "INVITE_BROWSER", nonce = "." }),
 		})
 	end,
