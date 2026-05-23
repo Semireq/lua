@@ -15,6 +15,7 @@ local Lootlabs_Link = ""
 
 local PlaceIDs = {
 	["118637423917462"] = "bc4054e90def20f1e124c13c57ab2b57",
+	["92416421522960"]  = "0b1d1ec68576c524489253d1be566587",
 }
 
 makefolder(Hub)
